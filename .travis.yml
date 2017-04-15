@@ -4,7 +4,12 @@ language: R
 sudo: false
 cache: packages
 
+before_script:
+  - set -e
+  - make install-deps
+  - set +e
+
 script:
   - set -e
-  - make
+  - make test
   - set +e
