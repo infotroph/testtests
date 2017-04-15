@@ -11,5 +11,5 @@ before_script:
 
 script:
   - set -e
-  - make test
+  - make check
   - set +e

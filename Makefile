@@ -4,3 +4,6 @@ install-deps: .
 
 test: .
 	Rscript -e "devtools::test('.', reporter='stop')"
+
+check: .
+	Rscript -e "devtools::check('.')"
