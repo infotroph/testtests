@@ -12,4 +12,5 @@ before_script:
 script:
   - set -e
   - make check
+  - if [[ `git status -s` ]]; then echo "Files changed by build! Did you forget to commit some Roxygen output?"; exit 1; fi
   - set +e
