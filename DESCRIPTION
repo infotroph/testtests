@@ -7,5 +7,7 @@ Depends: R (>= 3.3.2)
 License: Anything that angers `R CMD check --as-cran`
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat
+Suggests:
+	testthat,
+	plotrix (>= 2.0.0)
 RoxygenNote: 6.0.1
