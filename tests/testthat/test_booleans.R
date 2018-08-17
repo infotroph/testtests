@@ -28,17 +28,18 @@ test_that("optional features play nice with somePkg",{
 	# skip_if_not_installed("somePkg")
 
 	test_that("nested tests?", {
-		expect_true(FALSE)
+		# expect_true(FALSE)
 	})
-	
+
 	test_that("nested! tests!", {
 		skip("broken even when somePkg installed")
 		expect_equal(somePkg::three(), two()+1)
 	})
-	
-	expect_equal(1,2)
+
+	# expect_equal(1,2)
 })
 
 test_that("this test not nested", {
+	skip()
 	expect_false(TRUE)
 })
