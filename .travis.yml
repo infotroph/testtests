@@ -5,6 +5,10 @@ sudo: false
 cache: packages
 dist: trusty
 
+env:
+  global:
+    - MAKEFLAGS="-j 2"
+
 before_script:
   - set -e
   - make install-deps
