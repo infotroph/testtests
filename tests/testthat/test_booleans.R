@@ -40,6 +40,6 @@ test_that("optional features play nice with somePkg",{
 })
 
 test_that("this test not nested", {
-	skip()
+	skip("bah")
 	expect_false(TRUE)
 })
