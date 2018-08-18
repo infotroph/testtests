@@ -5,18 +5,18 @@ sudo: false
 cache: packages
 dist: trusty
 
-env:
-  global:
-    - MAKEFLAGS="-j 2"
+# env:
+#   global:
+#     - MAKEFLAGS="-j 2"
 
 before_script:
   - set -e
-  - make install-deps
+  - make -j2 install-deps
   - set +e
 
 script:
   - set -e
-  - make check
+  - make -j2 check
   - if [[ `git status -s` ]]; then
       echo "Files changed by build! Did you forget to commit some Roxygen output?";
       exit 1;
