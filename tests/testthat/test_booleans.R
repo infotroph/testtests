@@ -16,12 +16,6 @@
 # # 	expect_equal(mtcars[,-1], g(mtcars))
 # # })
 
-# context("something else")
-
-# test_that("printing prints",{
-# 	expect_output(print(3))
-# })
-
 context("Optional bits")
 
 test_that("optional features play nice with somePkg",{
